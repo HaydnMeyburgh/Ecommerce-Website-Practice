@@ -115,3 +115,14 @@ currentProductColor.forEach((color, index) => {
       currentProductImg.src = chosenProduct.colors[index].img;
    });
 });
+
+currentProductSize.forEach((size, index) => {
+   size.addEventListener('click', () => {
+      currentProductSize.forEach((size) => {
+         size.style.backgroundColor = 'white'
+         size.style.color = 'black'
+      });
+      size.style.backgroundColor = 'black'
+      size.style.color = 'white'
+   });
+});
